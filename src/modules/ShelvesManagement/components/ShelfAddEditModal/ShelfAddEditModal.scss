@@ -1,0 +1,41 @@
+@import 'src/theme/mixins.scss';
+
+.shelf-add-edit-modal {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .modal-wrapper {
+    --width: 550px;
+    --height: 385px;
+  }
+
+  .row-input {
+    height: 210px;
+  }
+
+  @include sm() {
+    .modal-wrapper {
+      --width: 96%;
+    }
+  }
+  
+  @include sm-height() {
+    .modal-wrapper {
+      --height: 98%;
+    }
+    
+    .row-input {    
+      height: 198px;
+    }
+  }
+}

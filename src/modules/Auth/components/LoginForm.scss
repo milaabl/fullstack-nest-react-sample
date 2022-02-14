@@ -1,0 +1,9 @@
+.login-page-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &__link {
+    color: black;
+  }
+}

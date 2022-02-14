@@ -1,0 +1,19 @@
+.flowerPotSlider {
+  &__image-container {
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:focus {
+      outline: transparent;
+      pointer-events: none;
+    }
+  }
+}

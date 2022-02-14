@@ -1,0 +1,33 @@
+@import 'src/theme/mixins.scss';
+@import 'src/theme/variables';
+
+.button {
+  &--successBackground {
+    --background: #009688;
+  }
+
+  &--dangerBackground {
+    --background: #b4144b;
+  }
+
+  &__text {
+    color: black;
+
+    &--withWhiteText {
+      color: white;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__icon {
+    color: black;
+    margin-left: 2px;
+
+    &--white {
+      color: white;
+    }
+  }
+}

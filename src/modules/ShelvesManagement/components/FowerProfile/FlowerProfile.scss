@@ -1,0 +1,50 @@
+@mixin nextWateringIn($color) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+
+  div {
+    background-color: $color;
+    color:  white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: 24px;
+    display: inline-block;
+  }
+}
+
+.flower-profile {
+  &__name {
+    font-size: 36px;
+    padding: 0px;
+  }
+
+  &__date {
+    font-size: 18px;
+    padding: 12px 0px;
+    text-align: right;
+  }
+
+  &__description {
+    max-width: 500px;
+  }
+
+  &__next-watering {
+    width: 200px;
+  }
+
+  &__next-watering-upcoming {
+    @include nextWateringIn(#009688);
+  }
+
+  &__next-watering-overdue {
+    @include nextWateringIn(#b4144b);
+  }
+}

@@ -1,0 +1,32 @@
+.shelves {
+    &__container {
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.136309);
+        margin: 0 0 30px 0;
+    }
+
+    &__container-header {
+        margin-top: 20px;
+    }
+
+    &__container-row {
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        padding: 0 16px 0 16px;
+        width: 100%;
+    }
+
+    &__text {
+        padding: 0;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    &__button {
+        min-width: 180px;
+        margin-right: 0;
+    }
+}

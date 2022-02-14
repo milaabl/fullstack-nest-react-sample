@@ -1,0 +1,71 @@
+@import 'src/theme/mixins.scss';
+
+.main-header {
+  min-height: 50px;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-header-avatar {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+
+  &__photo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 18px;
+    width: 500px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-header-logo-container {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.main-header-logo {
+  display: flex;
+  cursor: pointer;
+  padding-left: 0;
+  width: 250px;
+
+  &__icon {
+    font-size: 35px;
+    transform: rotate(100deg);
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  &__name {
+    font-size: 23px;
+  }
+
+  &:hover {
+    color: var(--ion-color-primary);
+  }
+}

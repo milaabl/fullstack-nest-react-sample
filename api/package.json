@@ -1,0 +1,103 @@
+{
+  "name": "Blomstergård API",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines" : { 
+    "npm" : "8.x",
+    "node" : "16.14.x"
+  },
+  "scripts": {
+<<<<<<< HEAD
+    "build": "nest build",
+=======
+>>>>>>> a74e41a56cd4fd95f73ab66a756f9043430e3eba
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "node dist/main",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/config": "^0.5.0",
+    "@nestjs/core": "^7.0.0",
+    "@nestjs/jwt": "^7.0.0",
+    "@nestjs/mongoose": "^7.0.1",
+    "@nestjs/passport": "^7.1.0",
+    "@nestjs/platform-express": "^7.0.0",
+    "@nestjs/schedule": "^0.4.0",
+    "@pusher/push-notifications-server": "^1.2.0",
+    "@types/passport-jwt": "^3.0.3",
+    "aws-sdk": "^2.739.0",
+    "bcrypt": "^5.0.0",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.12.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "express-rate-limit": "^5.1.3",
+    "get-timezone-offset": "^1.0.4",
+    "helmet": "^3.23.1",
+    "mongoose": "^5.9.19",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "nodemailer": "^6.4.10",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.5.4",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.0.0",
+    "@nestjs/schematics": "^7.0.0",
+    "@nestjs/testing": "^7.0.0",
+    "@types/express": "^4.17.6",
+    "@types/jest": "25.2.3",
+    "@types/mongoose": "^5.7.27",
+    "@types/node": "^13.9.1",
+    "@types/passport-local": "^1.0.33",
+    "@types/supertest": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "3.0.2",
+    "@typescript-eslint/parser": "3.0.2",
+    "eslint": "7.1.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "26.0.1",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "26.1.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,65 @@
+.login-page {
+  &__container {
+    min-height: 100%;
+    background-image: url('./../../assets/plant.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    color: rgba(0, 0, 0, 0.7);
+
+    &::after, &::before {
+      content: "";
+      width: 100%;
+      display: block;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      margin-left: 6px;
+    }
+
+    &::before {
+      margin-right: 6px;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+  }
+
+  &__icon {
+    margin-right: 5px;
+    &--greyed {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 45%;
+    max-width: 200px;
+    border: 1px solid lightgrey;
+    align-items: center;
+    justify-content: center;
+
+    &--google {
+      color: #222;
+      background-color: #fff;
+    }
+
+    &--fb {
+      color: #fff;
+      background-color: #3b5998;
+    }
+  }
+}

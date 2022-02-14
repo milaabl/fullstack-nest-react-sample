@@ -1,0 +1,39 @@
+.profile-form-avatar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-form-avatar {
+  display: flex;
+  position: relative;
+  outline: none;
+
+  &__input {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid lightgrey;
+  }
+
+  &__icon {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    right: 0;
+    bottom: 15px;
+  }
+}

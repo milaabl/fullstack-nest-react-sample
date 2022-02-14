@@ -1,0 +1,10 @@
+.profile-form {
+  &__error {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.time-notification-input {
+  margin: 10px 10px;
+}

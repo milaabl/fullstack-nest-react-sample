@@ -1,0 +1,10 @@
+.virtual-shelf {
+  &__card {
+    img {
+      filter: grayscale(0.8);
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.landing-page-content {
+  position: relative;
+
+  &__button {
+    position: absolute;
+    right: 0;
+  }
+
+  &__header {
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    opacity: 0.7;
+    top: 120px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 880px;
+    text-align: center;
+  }
+
+  &__header2 {
+    display: block;
+    position: absolute;
+    transform: translate(0, 15px);
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size:14px;
+    left: 0;
+    right: 0;
+    width: 295px;
+    text-align: center;
+    margin: 20px auto 10px auto;
+    line-height: 1.2;
+  }
+}
