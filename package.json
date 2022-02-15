@@ -48,7 +48,7 @@
     "node": "16.14.x"
   },
   "scripts": {
-    "heroku-postbuild": "npm i && cd api && npm i",
+    "heroku-postbuild": "npm i && cd api && npm i && npm run build",
     "start": "cd api && npm run start:prod",
     "build-sw": "node ./src/sw-build.js",
     "clean-cra-sw": "rm -f build/precache-manifest.*.js",
