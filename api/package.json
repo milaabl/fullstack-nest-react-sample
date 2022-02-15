@@ -10,10 +10,7 @@
     "node" : "16.14.x"
   },
   "scripts": {
-<<<<<<< HEAD
     "build": "nest build",
-=======
->>>>>>> a74e41a56cd4fd95f73ab66a756f9043430e3eba
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/main",
     "start:dev": "nest start --watch",
